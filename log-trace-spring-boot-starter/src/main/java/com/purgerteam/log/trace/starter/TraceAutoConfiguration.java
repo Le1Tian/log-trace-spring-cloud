@@ -14,7 +14,7 @@ import java.util.Map;
  * @since 1.0
  */
 @Configuration
-@EnableConfigurationProperties(TraceLogProperties.class)
+@EnableConfigurationProperties(TraceLogProperties.class)    // TraceLogProperties 类需用 @ConfigurationProperties 注解标记，用于绑定配置文件（如 application.yml）中的属性
 public class TraceAutoConfiguration {
 
     @Bean

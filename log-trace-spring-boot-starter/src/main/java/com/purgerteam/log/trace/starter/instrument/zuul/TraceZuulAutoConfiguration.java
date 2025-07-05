@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ConditionalOnWebApplication
-@ConditionalOnClass({ZuulFilter.class, TraceContentFactory.class})
+@ConditionalOnClass({ZuulFilter.class, TraceContentFactory.class})  // 指明了作用范围
 public class TraceZuulAutoConfiguration {
 
     @Bean
